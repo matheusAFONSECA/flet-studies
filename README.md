@@ -1,2 +1,9 @@
-# flet-studies
-Respositório dedicado ao estudos da ferramenta flet.
+# A flet-studies Flet app
+
+An example of a minimal Flet app.
+
+To run the app:
+
+```
+flet run [app_directory]
+```

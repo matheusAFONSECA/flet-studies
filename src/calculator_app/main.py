@@ -1,4 +1,9 @@
 import flet as ft
+from styles.style_buttons import (
+    DigitButton,
+    ActionButton,
+    ExtraActionButton,
+)
 
 
 def main(page: ft.Page):
@@ -17,44 +22,44 @@ def main(page: ft.Page):
                     ft.Row(controls=[result], alignment="end"),
                     ft.Row(
                         controls=[
-                            ft.ElevatedButton(text="AC", expand=1),
-                            ft.ElevatedButton(text="+/-", expand=1),
-                            ft.ElevatedButton(text="%", expand=1),
-                            ft.ElevatedButton(text="/", expand=1),
+                            ExtraActionButton(text="AC"),
+                            ExtraActionButton(text="+/-"),
+                            ExtraActionButton(text="%"),
+                            ActionButton(text="/"),
                         ]
                     ),
                     ft.Row(
                         controls=[
-                            ft.ElevatedButton(text="7", expand=1),
-                            ft.ElevatedButton(text="8", expand=1),
-                            ft.ElevatedButton(text="9", expand=1),
-                            ft.ElevatedButton(text="*", expand=1),
+                            DigitButton(text="7"),
+                            DigitButton(text="8"),
+                            DigitButton(text="9"),
+                            ActionButton(text="*"),
                         ]
                     ),
                     ft.Row(
                         controls=[
-                            ft.ElevatedButton(text="4", expand=1),
-                            ft.ElevatedButton(text="5", expand=1),
-                            ft.ElevatedButton(text="6", expand=1),
-                            ft.ElevatedButton(text="-", expand=1),
+                            DigitButton(text="4"),
+                            DigitButton(text="5"),
+                            DigitButton(text="6"),
+                            ActionButton(text="-"),
                         ]
                     ),
                     ft.Row(
                         controls=[
-                            ft.ElevatedButton(text="1", expand=1),
-                            ft.ElevatedButton(text="2", expand=1),
-                            ft.ElevatedButton(text="3", expand=1),
-                            ft.ElevatedButton(text="+", expand=1),
+                            DigitButton(text="1"),
+                            DigitButton(text="2"),
+                            DigitButton(text="3"),
+                            ActionButton(text="+"),
                         ]
                     ),
                     ft.Row(
                         controls=[
-                            ft.ElevatedButton(text="0", expand=2),
-                            ft.ElevatedButton(text=".", expand=1),
-                            ft.ElevatedButton(text="=", expand=1),
+                            DigitButton(text="0", expand=2),
+                            DigitButton(text="."),
+                            ActionButton(text="="),
                         ]
                     ),
-                ] 
+                ]
             ),
         )
     )
